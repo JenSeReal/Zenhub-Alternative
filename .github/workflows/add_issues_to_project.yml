@@ -1,0 +1,16 @@
+name: Adds issues and pull requests to project board
+
+on:
+  issues:
+    types:
+      - opened
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    name: Add issues and pull requests to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@RELEASE_VERSION
