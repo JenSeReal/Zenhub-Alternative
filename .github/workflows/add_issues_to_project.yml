@@ -13,4 +13,4 @@ jobs:
     name: Add issues and pull requests to project
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@RELEASE_VERSION
+      - uses: actions/add-to-project@v0.4.0
